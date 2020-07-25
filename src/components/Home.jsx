@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Unit from './Unit';
 
 class Home extends Component { 
     render() {
         
-        const units = [ 'Length','Temparature','Volume']  
+        const units = ['Length', 'Temparature', 'Volume']  
+        
         return (
             <div className='quantities-container'>
                 <div className='type'>
