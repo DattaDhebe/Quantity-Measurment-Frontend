@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Dashboard} from './Components/Dashboard'
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Title from './components/Title'
+import Home from './components/Home'
 
-class App extends Component {
-  render() {
-    return (
-    <div>
-      <Router>
-      <Route exact path="/" component={Dashboard} />  
-      </Router>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Title />
+      <Home />
+    </div>
+  );
 }
 
 export default App;
