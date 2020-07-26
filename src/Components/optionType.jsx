@@ -5,7 +5,8 @@ let service = new options();
 
 
 export class OptionType extends React.Component {
-constructor(props) {
+
+    constructor(props) {
         super(props);
         this.state = {
             selectedUnitType: '',
@@ -43,7 +44,8 @@ constructor(props) {
             }).catch((err)=>{
                 console.log(err);
             })
-        }
+    }
+    
 render() {
     let Quantity=this.props.Units;
     return (
@@ -52,19 +54,11 @@ render() {
                 <div className="form">FROM <br/>
                     <input className="input" type={"number"} value={this.state.inputValue} onChange={(event)=>this.onChangeInput(event)}></input>
                     <br/>
-                    <select className="select" value={this.state.inputUnit} onChange={(element)=>this.onChangeFirst(element)}>
-                        {Quantity.map((element, key) => {
-                            return <option key={key}>{element}</option>;
-                        })}
-                    </select>
+                    
                 </div>
                 <div className="form"> TO <br/>
                     <input className="output" type={"number"} value={this.state.outputValue} onChange={(event)=>this.onChangeInput(event)}></input><br/>
-                    <select className="outputselect" value={this.state.outputUnit} onChange={(element)=>this.onChangeSecond(element)}>
-                        {Quantity.map((element, key) => {
-                            return <option key={key}>{element}</option>;
-                        })}
-                    </select>
+                   
                 </div>
             </div>
     )
