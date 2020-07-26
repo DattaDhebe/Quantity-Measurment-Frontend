@@ -50,7 +50,8 @@ render() {
     let Quantity=this.props.Units;
     return (
     <div className='box'>
-                <br/>
+            <br />
+            <div className="optionContainer">
                 <div className="form">FROM <br/>
                     <input className="input" type={"number"} value={this.state.inputValue} onChange={(event)=>this.onChangeInput(event)}></input>
                     <br/>
@@ -68,6 +69,7 @@ render() {
                         })}
                     </select>
                 </div>
+            </div>
             </div>
     )
   }

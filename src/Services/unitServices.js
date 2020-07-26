@@ -8,7 +8,7 @@ class Service {
         console.log(" get in axios service ");
     return   axios.get(apiUrl);
     }
-
+    
     optiontype(data){
         console.log(" Id in axios service ",data);
     return   axios.post(apiUrl,data);
