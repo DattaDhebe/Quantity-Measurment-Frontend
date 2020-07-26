@@ -1,0 +1,309 @@
+.main{
+    background-color: #F5F6FA;
+    width: 100%;
+    height:790px;
+    flex: 1 0 auto;
+}
+.topbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 1 75px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+}
+
+.quanment{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+       
+}
+
+.history{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.header-container{
+    max-width: 1600px;
+    height: 20vh;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-flow: column;
+}
+.header-text{
+    background: #446DFF;
+    padding: 22px;
+    flex: 0 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 3.5vh;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin:auto;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+.length{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    width: 173px;
+    height:137px;
+    margin:2px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    opacity: 1;
+    border-color:transparent;
+    
+}
+.image1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    width: 173px;
+    height:137px;
+    margin:2px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    opacity: 1;
+    border-color:transparent;
+    
+}
+.image2{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    width: 173px;
+    height:137px;
+    border-color:transparent;
+    margin:2px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    opacity: 1;
+}
+.image1:hover,.image1:active{
+    display:block;
+    border-color:#0EC098;
+    border-width:2px;
+    border-style:solid;
+    background-color:#EDFDF9;
+    color:#0EC098;
+    text-align:bottom;
+}
+.image2:hover,.image2:active{
+    display:block;
+    border-color:#FD5160;
+    border-width:2px;
+    border-style:solid;
+    background-color:#FFEEF0;
+    color:#FD5160;
+}
+.image3:hover,.image3:active{
+    display:block;
+    border-color:#7224FF;
+    border-width:2px;
+    border-style:solid;
+    background-color:#E7DCFE;
+    color:#7224FF;
+}
+.length:hover,.length:active {
+    border-color:#0EC098;
+    border-width:2px;
+    border-style:solid;
+    background-color:#EDFDF9;
+    color:#0EC098;
+    text-align:bottom;
+}
+.temperature:hover,.temperature:active{
+   border-color:#FD5160;
+    border-width:2px;
+    border-style:solid;
+    background-color:#FFEEF0;
+    color:#FD5160;
+}
+.volume:hover,.volume:active{
+    border-color:#7224FF;
+    border-width:2px;
+    border-style:solid;
+    background-color:#E7DCFE;
+    color:#7224FF;
+}
+.temperature{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    width: 173px;
+    height:137px;
+    border-color:transparent;
+    margin:2px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    opacity: 1;
+}
+.volume{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    width: 173px;
+    height:137px;
+    margin:2px;
+    border-color:transparent;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    opacity: 1;
+}
+.image3{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    width: 173px;
+    height:137px;
+    margin:2px;
+    border-color:transparent;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    opacity: 1;
+}
+.header{
+    margin-left: 450px;
+    margin-bottom:25px;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+.header-span{
+    margin-bottom:20px;
+    font-weight: bold;
+    width: 111px;
+    height: 19px;
+    Text-align:left;
+    line-height: 15px;
+    color: #000000;
+    letter-spacing: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.lengthimage{
+    margin-top:30px;
+    margin-bottom:25px;
+}
+.lengthimage:hover{
+    z-index:-1;
+}
+.tempimage{
+    margin-top:30px;
+    margin-bottom:18px;
+}
+.volumeimage{
+    margin-top:40px;
+    margin-bottom:20px;
+}
+
+.dropdownheader{
+    margin-left: 450px;
+    margin-bottom:25px;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-top:40px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.62;
+    font-size: 12px;
+    line-height: 15px;
+}
+ @media only screen and (max-width: 1024px) {
+        .quanment{
+            color:red;
+        }
+       .header-container{{
+           max-width: 1600px;
+            Text-align:left;
+            display:flex;
+        }
+}
+
+@media screen and (device-width: 360px) {
+  .length{
+        width: 400px;
+        height:137px;
+    }
+    .header-container{
+            Text-align:90px;
+            width: 40px;
+        }
+        .main{
+            width: 100%;
+        }
+        .home{
+            width: 50%;
+        }
+    }
+}

@@ -1,16 +1,22 @@
-import React from 'react';
-import Header from './components/Header';
-import Title from './components/Title'
-import Home from './components/Home'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import "./CSS/table.css";
+import { History} from './Components/history'
+import { TopBar} from './Components/topBar'
+import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Title />
-      <Home />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+    <div>
+      <Router>
+      <Route exact path="/" component={TopBar} />
+      <Route  path="/quantitymeasurement/history" component={History} />
+       
+      </Router>
+      </div>
+    );
+  }
 }
 
 export default App;
