@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/optiontype.css";
+import "../CSS/optiontype.scss";
 import options from '../Services/unitServices'
 let service = new options();
 
@@ -51,7 +51,7 @@ render() {
     return (
     <div className='box'>
             <br />
-            <div className="optionContainer">
+            <div className="select-box ">
                 <div className="form">FROM <br/>
                     <input className="input" type={"number"} value={this.state.inputValue} onChange={(event)=>this.onChangeInput(event)}></input>
                     <br/>
@@ -61,6 +61,8 @@ render() {
                         })}
                     </select>
                 </div>
+            </div>
+            <div className="inputContainer">
                 <div className="form"> TO <br/>
                     <input className="output" type={"number"} value={this.state.outputValue} onChange={(event)=>this.onChangeInput(event)}></input><br/>
                     <select className="outputselect" value={this.state.outputUnit} onChange={(element)=>this.onChangeSecond(element)}>
@@ -70,7 +72,13 @@ render() {
                     </select>
                 </div>
             </div>
+            <div>
+
+                
             </div>
+
+        </div>
+        
     )
   }
 }

@@ -7,12 +7,15 @@
   position: absolute;
   transform: translate(-50%,-50%);
   box-sizing: border-box;
+  display: flex;
 }
+
+
 
 .input{
     top: 427px;
     left: 412px;
-    height: 50px;
+    height: 35px;
     font-size: 20px;
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -24,18 +27,18 @@
     outline:none;
     padding: 5px;
     font-weight: bold;
-     text-indent: 25px;
+    text-indent: 25px;
     text-align: left;
     font: Medium 31px/40px Roboto;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-    width: 337px;
+    width: 300px;
 }
 .output{
     top: 427px;
-    left: 711px;
-    height: 50px;
+    left: 412px;
+    height: 35px;
     display:flex;
     padding: 5px;
     margin-left: 15px;
@@ -53,30 +56,32 @@
     color: #000000;
     opacity: 1;
     outline:none;
-    width: 337px;
+    width: 300px;
 }
+
 .outputselect{
-    top: 486px;
-    left: 717px;
-    width: 337px;
-    height: 45px;
-    margin-left: 15px;
-    display:flex;
-    font-weight: bold;
-    line-height: 15px;
+    top: 427px;
+    left: 385px;
+    width: 315px;
+    height: 40px;
     display:inline-block;
+    font-weight: bold;
     text-indent: 25px;
+    display:flex;
+    line-height: 40px;
+    margin-left: auto;
+    //margin-left: 3%;
     flex-direction:column;
-    align-items:center;
     outline:none;
+    align-items:center;
     Justify-content: center;
 
 }
 .select{
-    top: 471px;
+    top: 427px;
     left: 385px;
-    width: 337px;
-    height: 45px;
+    width: 314px;
+    height: 40px;
     display:inline-block;
     font-weight: bold;
     text-indent: 25px;
@@ -88,6 +93,7 @@
     Justify-content: center;
 
 }
+
 .form{
 
   overflow-x: auto;
@@ -95,33 +101,3 @@
   display: inline-block;
 }
 
- @media only screen and (max-width: 1024px) {
-        .input,.select,.output,.outputselect{
-            width: 230px;
-            margin-right: 20px;
-            padding: 10px;
-        }
-        .box{
-            width: 690px;
-            left: 60%;
-        }
-}
-@media screen and (device-width: 360px) 
-  {
-      .form{
-        width: 60px;
-        margin-top: 20px;
-        margin-right: 20px;
-        padding: 6px;
-      }
-      .input,.select,.output,.outputselect{
-            width: 10px;
-            margin-top: 20px;
-            margin-right: 20px;
-            padding: 6px;
-        }
-    .box{
-            width: 400px;
-            height: 270px;
-        }
-}

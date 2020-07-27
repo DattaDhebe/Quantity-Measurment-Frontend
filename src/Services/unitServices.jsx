@@ -1,17 +1,15 @@
-import axios from 'axios';
-
-const apiUrl = 'https://localhost:44313/api/measurement';
+import AxiosServices from './axiosServices';
 
 class Service {
 
     history() {
         console.log(" get in axios service ");
-    return   axios.get(apiUrl);
+        return AxiosServices.get();
     }
     
     optiontype(data){
         console.log(" Id in axios service ",data);
-    return   axios.post(apiUrl,data);
+        return AxiosServices.post();
     }
 }
 export default Service;

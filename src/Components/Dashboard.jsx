@@ -1,15 +1,14 @@
 import React from "react";
-import "../CSS/TopBar.css";
+import "../CSS/dashboard.scss";
 import Inactivescale from "../Assets/Inactivescale.svg";
 import scale from "../Assets/scale.svg";
 import hot from "../Assets/hot.svg";
 import beaker from "../Assets/beaker.svg";
 import Inactivehot from "../Assets/Inactivehot.svg";
 import Inactivebeaker from "../Assets/Inactivebeaker.svg";
-import {OptionType} from '../Components/optionType'
-import {Link } from "react-router-dom";
+import {OptionType} from './optionType'
 
-export class TopBar extends React.Component {
+export class Dashboard extends React.Component {
   constructor(props) {
 
         super(props);
@@ -70,53 +69,53 @@ export class TopBar extends React.Component {
 
 render() {
     return (
-    <div class="main">
-      <div class="topbar-container"> 
-        <div class="quanment">Quanment</div>
+    <div className="main">
+      <div className="topbar-container"> 
+        <div className="quanment">Quanment</div>
         <div/> 
-         <Link to={{pathname:"/quantitymeasurement/history"}}><div class="history">History</div></Link>
+          <div className="history">History</div>
       </div> 
-      <div class="header-container">
-         <span class="header-text" align="center">Welcome To Quantity Measurement</span>
+      <div className="header-container">
+         <span className="header-text" align="center">Welcome To Quantity Measurement</span>
       </div>
-      <div class="header">
-        <span class="header-span">CHOOSE TYPE</span>
+      <div className="header">
+        <span className="header-span">CHOOSE TYPE</span>
       </div>
-      <div class="home"> 
+      <div className="home"> 
       {
         this.state.openImg ? 
-        <div class="length"  onClick={()=>this.lengthOption()}
+        <div className="length"  onClick={()=>this.lengthOption()}
            onMouseOver={this.handleColorToggle}
                           onMouseLeave={this.handleColorToggle}
-                ><img src={scale}  class="lengthimage" alt="Length"/>Length</div>:
-          <div class="image1" onClick={()=>this.lengthOption()}
+                ><img src={scale}  className="lengthimage" alt="Length"/>Length</div>:
+          <div className="image1" onClick={()=>this.lengthOption()}
            onMouseOver={this.handleColorToggle}
                 onMouseLeave={this.handleColorToggle}
-          ><img src={Inactivescale} class="lengthimage" alt="Length"/>Length</div>
+          ><img src={Inactivescale} className="lengthimage" alt="Length"/>Length</div>
       }
 
       {
         this.state.openImg1 ? 
-          <div class="temperature" onClick={()=>this.temperatureOption()}
+          <div className="temperature" onClick={()=>this.temperatureOption()}
             onMouseOver={this.handleColorToggle1 }
                 onMouseLeave={this.handleColorToggle1 }
-              ><img src={hot}  class="tempimage" alt="Temperature"/>Temperature</div>:
-          <div class="image2" onClick={()=>this.temperatureOption()}
+              ><img src={hot}  className="tempimage" alt="Temperature"/>Temperature</div>:
+          <div className="image2" onClick={()=>this.temperatureOption()}
            onMouseOver={this.handleColorToggle1 }
                 onMouseLeave={this.handleColorToggle1 }
-            ><img src={Inactivehot}  class="tempimage" alt="Temperature"/>Temperature</div>
+            ><img src={Inactivehot}  className="tempimage" alt="Temperature"/>Temperature</div>
       }  
 
       {
         this.state.openImg2 ? 
-        <div class="volume"  onClick={()=>this.volumeOption()}
+        <div className="volume"  onClick={()=>this.volumeOption()}
            onMouseOver={this.handleColorToggle2}
                           onMouseLeave={this.handleColorToggle2}
-                ><img src={beaker}  class="volumeimage" alt="Volume"/>Volume</div>:
-          <div class="image3" onClick={()=>this.volumeOption()}
+                ><img src={beaker}  className="volumeimage" alt="Volume"/>Volume</div>:
+          <div className="image3" onClick={()=>this.volumeOption()}
            onMouseOver={this.handleColorToggle2}
                 onMouseLeave={this.handleColorToggle2}
-          ><img src={Inactivebeaker}  class="volumeimage" alt="Volume"/>Volume</div>
+          ><img src={Inactivebeaker}  className="volumeimage" alt="Volume"/>Volume</div>
       }
           <OptionType Units={this.state.options}/>
           

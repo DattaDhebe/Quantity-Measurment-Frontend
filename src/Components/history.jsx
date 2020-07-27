@@ -6,7 +6,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';  
 import TableRow from '@material-ui/core/TableRow';  
 import Paper from '@material-ui/core/Paper';  
-import "../CSS/table.css";
+import "../CSS/table.scss";
 import historyService from '../Services/unitServices'
 let service = new historyService();
 
@@ -39,7 +39,7 @@ export class History extends React.Component {
         <Table stickyHeader aria-label="sticky table" id='History'>  
           <TableHead>  
             <TableRow>  
-              <TableCell align="center" >Option Type</TableCell>  
+              <TableCell align="center" >OptionType</TableCell>  
               <TableCell align="center" >Value</TableCell>  
               <TableCell align="center" >Result</TableCell>  
               <TableCell align="center" >Date Of Creation</TableCell>  
